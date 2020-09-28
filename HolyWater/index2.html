@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #player{
+        position: absolute;
+        offset-anchor: center;
+        top: 73vw;
+        left: 20vw;
+        width: 60vw;
+    }
+    #art{
+        position: absolute;
+        offset-anchor: center;
+        width: 70vw;
+        heigth: 70vw;
+        left: 15vw;
+        top: 2vw;
+
+    }
+
+    #welcome{
+        position: absolute;
+        text-align: center;
+        top: 75vw;
+        left: 30vw;
+        width: 40vw;
+        font-size: 30px;
+        font-family: Cambria;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Audio</title>
+</head>
+<body>
+<div id="art">
+    <img src="art.jpg" style="width: 100%; height: 100%"/>
+</div>
+
+<div id="player">
+    <audio controls autoplay style="width:100%;">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<p id="welcome">
+    Courtney! You opened the letter and found the QR code! 😁
+</p>
+
+
+
+</body>
+</html>
