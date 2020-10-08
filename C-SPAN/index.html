@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #div1 {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    #cspan1 {
+        position: relative;
+        top: calc(50vh - calc(576px/2));
+        left: calc(50vw - calc(1024px/2));
+        width: 1024px;
+        height: 576px;
+    }
+    #div2 {
+        position: absolute;
+        top: 100vh;
+        height: 100vh;
+        width: 100vw;
+    }
+    #cspan2 {
+        position: relative;
+        top: calc(50vh - calc(576px/2));
+        left: calc(50vw - calc(1024px/2));
+        width: 1024px;
+        height: 576px;
+    }
+    #div3 {
+        position: absolute;
+        top: 200vh;
+        height: 100vh;
+        width: 100vw;
+    }
+    #cspan3 {
+        position: relative;
+        top: calc(50vh - calc(576px/2));
+        left: calc(50vw - calc(1024px/2));
+        width: 1024px;
+        height: 576px;
+    }
+    #cspan1img{
+        position:absolute;
+        left: calc(50vw - 12.5vw);
+        width: 25vw;
+        height: auto;
+        top: 1vh;
+    }
+    #cspan2img{
+        position:absolute;
+        left: calc(50vw - 12.5vw);
+        width: 25vw;
+        height: auto;
+        top: 101vh;
+    }
+    #cspan3img{
+        position:absolute;
+        left: calc(50vw - 12.5vw);
+        width: 25vw;
+        height: auto;
+        top: 201vh;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>C-SPAN</title>
+</head>
+<body>
+<img id="cspan1img" src="https://static.c-span.org/assets/images/CSPAN_Navy-and-Blue.svg">
+<img id="cspan2img" src="https://static.c-span.org/assets/images/CSPAN2_Navy-and-Red.svg">
+<img id="cspan3img" src="https://static.c-span.org/assets/images/CSPAN3_Navy-and-Amber.svg">
+<div id="div1" >
+    <iframe id="cspan1" width="100%" height="100%" src="https://cspan1-lh.akamaihd.net/i/cspan1_1@304727/master.m3u8?hdnts=st%3D1602190801~exp%3D1602198001~acl%3D%2F*~hmac%3D16a384add71966e8ad1803a66b13fb3210c4f26cc99c3ae8daffe2d2d919689b" allow="autoplay" allowfullscreen></iframe>
+</div>
+<div id="div2" >
+    <iframe id="cspan2" width="100%" height="100%" src="https://cspan2-lh.akamaihd.net/i/cspan2_1@304728/master.m3u8?hdnts=st%3D1602190801~exp%3D1602198001~acl%3D%2F*~hmac%3D16a384add71966e8ad1803a66b13fb3210c4f26cc99c3ae8daffe2d2d919689b" allow="autoplay" allowfullscreen></iframe>
+</div>
+<div id="div3" >
+    <iframe id="cspan3" width="100%" height="100%" src="https://cspan3-lh.akamaihd.net/i/cspan3_1@304729/master.m3u8?hdnts=st%3D1602190801~exp%3D1602198001~acl%3D%2F*~hmac%3D16a384add71966e8ad1803a66b13fb3210c4f26cc99c3ae8daffe2d2d919689b" allow="autoplay" allowfullscreen></iframe>
+</div>
+</body>
+</html>
