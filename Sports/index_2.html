@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    body {
+      background-color: #121212;
+    }
+
+    .focus {
+      position: absolute;
+      top: 20vh;
+      left: 50vw;
+      width: 50vw;
+      height: calc(50vw * 0.5625)
+    }
+    .background_1 {
+      position: absolute;
+      opacity: 0.5;
+      top: 20vh;
+      left: 0px;
+      width: 50vw;
+      height: calc(50vw * 0.5625)
+    }
+    #button2{
+      position: absolute;
+      left: 51vw;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+</head>
+<body>
+  <button id="button1" onclick="click1()">Switch</button>
+<div id=eventOne class=focus>
+  <iframe id=videoOne frameborder=0 height=100% width=100% src="http://weakstreams.com/weakstreams/9831995&link=2" allowfullscreen scrolling=no allowtransparency></iframe>
+</div>
+<div id=eventTwo class=background_1>
+  <iframe id=videoTwo frameborder=0 height=100% width=100% src="http://weakstreams.com/streams/9739781" allowfullscreen scrolling=no allowtransparency></iframe>
+</div>
+</html>
+
+<script>
+
+function click1(){
+
+  document.getElementById("eventOne").classList.toggle('focus');
+  document.getElementById("eventOne").classList.toggle('background_1');
+  document.getElementById("eventTwo").classList.toggle('focus');
+  document.getElementById("eventTwo").classList.toggle('background_1');
+
+}
+
+</script>
